@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - "release-docker"
+  workflow_dispatch:
 
 permissions:
   contents: read
