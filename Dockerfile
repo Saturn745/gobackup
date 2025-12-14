@@ -47,7 +47,6 @@ RUN wget https://aka.ms/sqlpackage-linux && \
     rm mssql-tools18_18.4.1.1-1_amd64.apk
 
 ENV PATH="${PATH}:/opt/sqlpackage:/opt/mssql-tools18/bin"
-
 # Install the influx CLI
 ARG INFLUX_CLI_VERSION=2.7.5
 RUN case "$(uname -m)" in \
